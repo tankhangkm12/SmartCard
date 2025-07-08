@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+</head>
+
+<style>
+    .container {
+        display: grid;
+        width: 100%;
+        height: 90vh;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container img {
+        border-radius: 50px;
+        padding: 0;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr;
+        }
+
+        .container img {
+            width: 100%;
+            border-radius: 50px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div><img src="./momoQR.jpg" alt="Momo QR"></div>
+        <div><img src="./vietcombankQR.jpg" alt="Vietcombank QR"></div>
+    </div>
+</body>
+
+</html>
